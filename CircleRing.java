@@ -18,13 +18,13 @@ public class CircleRing {
     	rob.penDown();
     	rob.miniaturize();
         // 4. Set the robot’s speed to 10
-    	rob.setSpeed(10);
+    	rob.setSpeed(100);
         // 5. Do everything below here 360 times (use i as the counter)
-    	for(int i=0;i>=360;i++) {
+    	for(int i=0;i<=360;i++) {
     		rob.move(3);
     		rob.turn(1);
-    		if(i%2==0) {
-    			for(int j=0;j>=360;j++) {
+    		if(i%20==0) {
+    			for(int j=0;j<=360;j++) {
     			rob.move(1);
     			rob.turn(1);
     			}

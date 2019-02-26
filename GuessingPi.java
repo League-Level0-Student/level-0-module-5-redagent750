@@ -9,13 +9,12 @@ import javax.swing.JOptionPane;
 public class GuessingPi {
 public static void main(String[] args) {
 	String Pi = String.valueOf(Math.PI);
-	int Pi2 = Integer.parseInt(Pi);
+	
 	for(int i = 0;i<=2;i++) {
 		System.out.println(Pi.charAt(i));
 		
-		String user = JOptionPane.showInputDialog("What is the next digits of Pi?");
-		int user2 = Integer.parseInt(user);
-		if(Pi2==user2){
+		String	user = JOptionPane.showInputDialog("What is the next digits of Pi?");
+		if(Pi==user){
 			JOptionPane.showMessageDialog(null,"correct");
 			}
 		else {
